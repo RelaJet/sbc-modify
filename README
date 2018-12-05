@@ -1,0 +1,45 @@
+SBC library
+***********
+
+Copyright (C) 2004-2010  Marcel Holtmann <marcel@holtmann.org>
+
+
+Compilation and installation
+============================
+
+In order to compiler the source code you need following software packages:
+	- GCC compiler
+	- GNU C library
+
+To configure run:
+	./configure --prefix=/usr
+
+Configure automatically searches for all required components and packages.
+
+To compile and install run:
+	make && make install
+
+
+For Mac
+***********
+
+### Install 
+
+```
+autoscan
+autoconf
+autoheader
+
+libtoolize --automake --copy --debug --force
+or
+glibtoolize 
+
+automake --add-missing
+
+./configure --prefix=/usr
+make
+
+```
+
+Install Ref:
+* https://hk.saowen.com/a/fa6ef43206e5b92549283472f5daf25e54d4f4380a606813a4e3c21bce720b73
